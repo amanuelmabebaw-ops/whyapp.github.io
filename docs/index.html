@@ -3,270 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why App — Privacy Policy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>WHY App - Privacy Policy</title>
     <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-        :root {
-            --cream: #FFF8F0;
-            --peach: #FFE8D5;
-            --brown-dark: #5D4037;
-            --brown-mid: #9C8B7A;
-            --brown-light: #B8A99A;
-            --tan: #C4B5A0;
-            --green: #2D8B6F;
-            --purple: #667eea;
-            --white: #ffffff;
-        }
-
         body {
-            font-family: 'Nunito', sans-serif;
-            background: linear-gradient(180deg, var(--cream) 0%, var(--peach) 40%, var(--cream) 100%);
-            color: var(--brown-dark);
-            min-height: 100vh;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .page-wrapper {
-            max-width: 680px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 60px 28px 80px;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #FFF8F0;
         }
-
-        /* Header */
-        .header {
-            text-align: center;
-            margin-bottom: 48px;
-            animation: fadeUp 0.6s ease-out;
-        }
-
-        .header .emoji { font-size: 48px; margin-bottom: 12px; }
-
-        .header h1 {
-            font-size: 32px;
-            font-weight: 800;
-            color: var(--brown-dark);
-            letter-spacing: -0.5px;
-        }
-
-        .header .subtitle {
-            font-size: 15px;
-            color: var(--brown-mid);
-            font-weight: 600;
-            margin-top: 6px;
-        }
-
-        .header .date {
-            display: inline-block;
-            margin-top: 14px;
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--purple);
-            background: rgba(102, 126, 234, 0.1);
-            padding: 5px 14px;
-            border-radius: 100px;
-        }
-
-        /* Card */
-        .card {
-            background: var(--white);
-            border-radius: 20px;
-            padding: 32px 28px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-            animation: fadeUp 0.6s ease-out both;
-        }
-
-        .card:nth-child(2) { animation-delay: 0.08s; }
-        .card:nth-child(3) { animation-delay: 0.16s; }
-        .card:nth-child(4) { animation-delay: 0.24s; }
-        .card:nth-child(5) { animation-delay: 0.32s; }
-        .card:nth-child(6) { animation-delay: 0.40s; }
-        .card:nth-child(7) { animation-delay: 0.48s; }
-
-        .card h2 {
-            font-size: 18px;
-            font-weight: 800;
-            color: var(--brown-dark);
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .card h2 .icon {
-            width: 34px;
-            height: 34px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            flex-shrink: 0;
-        }
-
-        .card p, .card li {
-            font-size: 15px;
-            line-height: 1.7;
-            color: var(--brown-mid);
-            font-weight: 600;
-        }
-
-        .card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .card ul li {
-            padding: 6px 0;
-            padding-left: 22px;
-            position: relative;
-        }
-
-        .card ul li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--green);
-            font-weight: 800;
-            font-size: 13px;
-        }
-
-        .highlight-box {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
-            border-radius: 14px;
-            padding: 18px 20px;
-            margin-top: 14px;
-            border-left: 3px solid var(--purple);
-        }
-
-        .highlight-box p {
-            font-size: 14px;
-            color: var(--brown-dark);
-            font-weight: 700;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            margin-top: 48px;
-            animation: fadeUp 0.6s ease-out 0.5s both;
-        }
-
-        .footer a {
-            display: inline-block;
-            color: var(--white);
-            background: linear-gradient(135deg, var(--purple), #764ba2);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            padding: 12px 28px;
-            border-radius: 100px;
-            box-shadow: 0 4px 14px rgba(102, 126, 234, 0.35);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .footer a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.45);
-        }
-
-        .footer .copy {
-            font-size: 12px;
-            color: var(--tan);
-            font-weight: 600;
-            margin-top: 20px;
-        }
-
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(16px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 480px) {
-            .page-wrapper { padding: 40px 18px 60px; }
-            .header h1 { font-size: 26px; }
-            .card { padding: 24px 20px; }
-        }
+        h1 { color: #2D3436; font-size: 28px; }
+        h2 { color: #2D3436; font-size: 20px; margin-top: 30px; }
+        h3 { color: #636E72; font-size: 16px; margin-top: 20px; }
+        p, li { color: #636E72; font-size: 15px; }
+        ul { padding-left: 20px; }
+        .highlight { background: #FFF0E6; padding: 16px; border-radius: 12px; margin: 16px 0; border-left: 4px solid #667eea; }
+        .updated { color: #667eea; font-weight: 600; }
+        a { color: #667eea; }
     </style>
 </head>
 <body>
-    <div class="page-wrapper">
+    <h1>Privacy Policy</h1>
+    <p><strong>WHY &ndash; Speech &amp; Language App</strong></p>
+    <p class="updated">Last updated: February 28, 2026</p>
 
-        <div class="header">
-            <div class="emoji">🗣️</div>
-            <h1>Privacy Policy</h1>
-            <div class="subtitle">Why App — Speech Practice for Kids</div>
-            <div class="date">Effective: February 14, 2026</div>
-        </div>
+    <p>This privacy policy describes how WHY ("we," "our," or "the app") collects, uses, and protects your information. Your privacy is important to us, and we are committed to transparency about how data is handled.</p>
 
-        <div class="card">
-            <h2>
-                <span class="icon" style="background: rgba(45, 139, 111, 0.12); color: #2D8B6F;">🛡️</span>
-                Our Promise
-            </h2>
-            <p>Why is designed with your child's privacy as a top priority. We believe kids should be able to learn and practice speaking without being tracked. We collect the absolute minimum data needed to run the app.</p>
-        </div>
+    <h2>1. Information We Collect</h2>
 
-        <div class="card">
-            <h2>
-                <span class="icon" style="background: rgba(78, 205, 196, 0.12); color: #4ECDC4;">📋</span>
-                What We Collect
-            </h2>
-            <p>We do <strong>not</strong> collect personal information from you or your child. The only data involved is:</p>
-            <ul>
-                <li>Subscription status managed by Apple through StoreKit</li>
-                <li>Basic app usage analytics provided by Apple (crash reports, anonymous usage stats)</li>
-            </ul>
-            <div class="highlight-box">
-                <p>🔒 We do not collect names, emails, photos, voice recordings, or any personal identifiers.</p>
-            </div>
-        </div>
+    <h3>a) Account Information</h3>
+    <p>We use Firebase Anonymous Authentication to create a session. No personal information such as name, email, or phone number is required to use the app. If you provide a child's name in Settings, it is stored locally on your device and is never sent to our servers.</p>
 
-        <div class="card">
-            <h2>
-                <span class="icon" style="background: rgba(255, 179, 71, 0.12); color: #FFB347;">🤖</span>
-                AI-Generated Content
-            </h2>
-            <p>Why uses AI to generate practice questions and conversations. These interactions are processed in real-time and are not stored or linked to your child's identity. No conversation history is retained on our servers.</p>
-        </div>
+    <h3>b) Practice Data</h3>
+    <p>The app stores progress data (stars earned, scenes completed, difficulty levels) in Firebase Firestore, associated with your anonymous account ID. This data is used to track learning progress and customize the experience.</p>
 
-        <div class="card">
-            <h2>
-                <span class="icon" style="background: rgba(102, 126, 234, 0.12); color: #667eea;">💳</span>
-                Subscriptions &amp; Payments
-            </h2>
-            <p>All purchases are handled entirely by Apple through the App Store. We never see or store any payment information, credit card details, or Apple ID credentials. You can manage or cancel your subscription anytime in your iPhone's Settings.</p>
-        </div>
+    <h3>c) Subscription Information</h3>
+    <p>Subscription status (active/expired) is stored in Firebase Firestore to verify access to premium features. Payment processing is handled entirely by Apple. We do not collect or store any payment information.</p>
 
-        <div class="card">
-            <h2>
-                <span class="icon" style="background: rgba(118, 75, 162, 0.12); color: #764ba2;">👶</span>
-                Children's Privacy
-            </h2>
-            <p>We comply with the Children's Online Privacy Protection Act (COPPA) and similar regulations. We do not knowingly collect personal data from children under 13. The app is designed so that children can use it without providing any personal information.</p>
-        </div>
+    <div class="highlight">
+        <h2>2. Third-Party AI Service &mdash; Data Sharing Disclosure</h2>
 
-        <div class="card">
-            <h2>
-                <span class="icon" style="background: rgba(255, 107, 107, 0.12); color: #FF6B6B;">🔄</span>
-                Changes to This Policy
-            </h2>
-            <p>If we make changes to this privacy policy, we will update this page with the new effective date. We encourage you to check back periodically. Continued use of the app constitutes acceptance of any updates.</p>
-        </div>
+        <p><strong>The app uses OpenAI's API to power certain features.</strong> Before any data is sent to OpenAI, you will be asked for your explicit consent within the app. You may decline and still use all non-AI features.</p>
 
-        <div class="card">
-            <h2>
-                <span class="icon" style="background: rgba(45, 139, 111, 0.12); color: #2D8B6F;">✉️</span>
-                Contact Us
-            </h2>
-            <p>If you have questions about this privacy policy or your data, please reach out to us at:</p>
-            <div class="highlight-box">
-                <p>📧 Amanuel.abebaw@icloud.com</p>
-            </div>
-        </div>
+        <h3>What data is sent to OpenAI:</h3>
+        <ul>
+            <li><strong>Answer Evaluation:</strong> The practice question, your child's typed or spoken answer, target vocabulary words, and difficulty level are sent to evaluate the response and provide encouraging feedback.</li>
+            <li><strong>AI Conversations (Smart Practice):</strong> The scene description, question, model answer, and the back-and-forth conversation text are sent to generate appropriate follow-up questions.</li>
+            <li><strong>Text-to-Speech:</strong> Text content from practice scenes is sent to generate audio read-aloud.</li>
+            <li><strong>Scene Generation:</strong> Difficulty level, age setting, and general category preferences (e.g., "emotions," "daily life") are sent to create new practice scenarios.</li>
+        </ul>
 
-        <div class="footer">
-            <a href="support.html">Visit Support Page →<
+        <h3>What is NOT sent to OpenAI:</h3>
+        <ul>
+            <li>Your child's name</li>
+            <li>Photos or images</li>
+            <li>Location data</li>
+            <li>Device identifiers</li>
+            <li>Any personally identifiable information</li>
+        </ul>
+
+        <h3>How data is transmitted and protected:</h3>
+        <ul>
+            <li>All data is transmitted over HTTPS (encrypted in transit).</li>
+            <li>Data is routed through our secure Firebase Cloud Functions &mdash; the app does not communicate directly with OpenAI.</li>
+            <li>Requests are authenticated using Firebase Auth tokens to prevent unauthorized access.</li>
+            <li>OpenAI processes the data in real time to generate responses. Per OpenAI's API data usage policy, API data is not used to train their models.</li>
+        </ul>
+
+        <h3>Your control:</h3>
+        <ul>
+            <li>You are asked for consent before any data is sent to OpenAI.</li>
+            <li>You can revoke consent at any time in the app's Settings screen.</li>
+            <li>If you decline, all non-AI features (practice scenes, progress tracking, parent guide) remain fully functional.</li>
+        </ul>
+    </div>
+
+    <h2>3. How We Use Information</h2>
+    <ul>
+        <li>To provide speech and language practice experiences</li>
+        <li>To evaluate answers and provide feedback (via OpenAI)</li>
+        <li>To generate audio for read-aloud features (via OpenAI)</li>
+        <li>To track learning progress across sessions</li>
+        <li>To manage subscription access</li>
+    </ul>
+
+    <h2>4. Data Storage and Security</h2>
+    <p>Practice progress and subscription data are stored in Google Firebase (Firestore), hosted in the United States. Data is protected by Firebase's security rules and is only accessible with a valid authentication token. All network communication uses HTTPS encryption.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>The app is designed to be used by children with parental guidance. We do not knowingly collect personal information from children. The app uses anonymous authentication and does not require any personal details. The child's name, if provided, is stored only on the local device.</p>
+
+    <h2>6. Data Retention</h2>
+    <p>Practice data is retained as long as the anonymous account exists. If you delete the app, your local data is removed. To request deletion of server-side data, contact us at the email below.</p>
+
+    <h2>7. Third-Party Services</h2>
+    <p>The app uses the following third-party services:</p>
+    <ul>
+        <li><strong>Firebase (Google):</strong> Authentication, data storage, and cloud functions. <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a></li>
+        <li><strong>OpenAI:</strong> AI-powered answer evaluation, conversation, text-to-speech, and scene generation. <a href="https://openai.com/policies/privacy-policy">OpenAI Privacy Policy</a>. Data sent via API is not used for model training.</li>
+        <li><strong>Apple StoreKit:</strong> Subscription management. Handled entirely by Apple per their privacy policy.</li>
+    </ul>
+
+    <h2>8. Your Rights</h2>
+    <ul>
+        <li>You can revoke AI data consent at any time in Settings.</li>
+        <li>You can reset all progress data from the Settings screen.</li>
+        <li>You can request deletion of all server-side data by contacting us.</li>
+    </ul>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be reflected by the "Last updated" date at the top of this page.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have questions about this privacy policy or your data, contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:Amanuel.abebaw@icloud.com">Amanuel.abebaw@icloud.com</a></p>
+
+</body>
+</html>
